@@ -16,3 +16,10 @@ function updateResult() {
 function calculateMinutes(minutes) {
     return Math.floor((minutes * 10) / 6);
 }
+
+function copyResult() {
+    let result = document.getElementById('total_in_decimal');
+    // won't work locally - needs https
+    navigator.clipboard.writeText(result.value);
+    alert("Copied to your clipboard");
+}
