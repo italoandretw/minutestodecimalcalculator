@@ -1,0 +1,58 @@
+header {
+    font-family: "Inter",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    color: #333;
+    margin: 1rem;
+    --t-pink: #ef5ba1;
+    --t-red: #ee312d;
+    --t-orange: #f78f30;
+    --t-green-yellow: #b5b934;
+    --t-green: #13aa58;
+    --t-light-green: #88b67f;
+    --t-light-blue: #80c9d2;
+    --t-turquoise: #27bccf;
+    --t-blue: #1a73b9;
+    --t-purple: #6a2569;
+    --t-purple-2: #b11d54;
+    --t-pink-2: #ef5aa1;
+    --t-flamingo-pink: #f2617a;
+    --t-wave-blue: #003d4f;
+    --t-amethyst-purple: #634f7d;
+}
+header .page-banner {
+    background-color: #003d4f;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    padding: 3rem;
+    margin: -1rem;
+    line-height: 2rem;
+}
+
+header .page-banner h1 {
+    color: #fff;
+    font-family: "Bitter",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    margin: 1.5rem;
+}
+
+.languageMenu {
+    --t-amethyst-purple: #634f7d;
+    margin: 0 -1rem;
+    color: #fff;
+    padding: .5rem;
+    text-align: right;
+    transition: all .2s ease-out;
+}
+
+.languageMenu select {
+    height: 1.6rem;
+    padding: 1px;
+    display: inline-block;
+    width: auto;
+    border-radius: 2px;
+}

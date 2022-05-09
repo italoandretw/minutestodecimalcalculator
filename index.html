@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hours and minutes to decimal</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="root">
+        <div>
+            <header>
+                <div class="page-banner">
+                    <h1>Minutes to Decimal Calculator</h1>
+                </div>
+                <div class="languageMenu transition" style="color: rgb(255, 255, 255); background-color: rgb(242, 97, 122);">
+                    <div>
+                        <label>Language</label>
+                        <select name="language" id="languageSelect" title="Language">
+                            <option value="en" label="English">English</option>
+                            <option value="pt-br" label="Portuguese">Português</option>
+                        </select>
+                    </div>
+                </div>
+                <p id="subtitle">Convert minutes to a decimal format</p>
+                <p id="description">If you had a simple day, with one check-in and one check-out, you should <a href="ç">use this calculator instead</a>. However, if your days had some interruptions, it might be easier to work with the total duration of you work day than check-ins and check-outs. If that's the case, use the calculator on this page.</p>
+            </header>
+            <section id="calculator">
+                <form>
+                    <div>
+                        <label for="hours">Total Hours</label>
+                        <input type="text" id="hours" required="required">
+                        <label for="minutes">Total Minutes</label>
+                        <input type="text" id="minutes" required="required">
+                        <button id="buttonCalculate" type="button" onclick="updateResult();">Calculate</button>
+                    </div>
+                    <hr>
+                    <div>
+                        <label for="total_hours">Total hours and minutes in decimal</label>
+                        <input type="text" id="total_in_decimal" readonly="readonly">
+                        <button id="buttonCalculate" type="button" onclick="copyResult();">Copy</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
